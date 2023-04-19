@@ -1,0 +1,7 @@
+*{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main{
+  margin: 0 auto;
+  width: clamp(300px, 50%, 800px);
+}

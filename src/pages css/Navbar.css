@@ -1,0 +1,133 @@
+.header{
+    margin: 0;
+    align-items: center;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    height:fit-content;
+    width: 100%;
+    background-color: beige;
+    /* border-radius: 15px; */
+    margin-bottom: 2rem;
+}
+.header__logo{
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+}
+.header__image{
+    border-radius: 50%;
+    height: 3rem;
+    border-radius: 50%;
+}
+.header__title{
+    font-size: 3em;
+    margin: auto;
+
+}
+.header__nav-bar{
+    margin: 0;
+    padding: 0;
+}
+.header__menu{
+    display: flex;
+}
+.header__items{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;  
+    font-weight: 600;
+    padding: 10px;
+}
+.header__items.active{
+    border-bottom: 5px solid rgb(0, 88, 220);
+}
+
+.header__items:hover{
+    background-color: blue;
+    border-radius: 4px;
+    color: aliceblue;
+    transition: 0.4s;
+    
+}
+
+.burger{
+    display: none;
+}
+.burger__line{
+    background-color: antiquewhite;
+    margin-bottom:0.5rem ;
+    padding: 0.1rem;
+    width: 2.5rem;
+}
+.burger{
+    display: none;
+}
+.burger__line{
+    background-color: antiquewhite;
+    margin-bottom:0.5rem ;
+    padding: 0.1rem;
+    width: 2.5rem;
+}
+@media (max-width:600px) {
+    .header{
+        max-height: 2rem;
+    }
+    .header__image{
+        width: 2rem;
+        height: 2rem;
+    }
+    .header__title{
+        font-size: 2.2rem;
+    }
+    .burger{
+        margin: 0.5rem;
+        padding: 0.2rem;
+        display: block;
+
+    }
+    .burger:hover{
+        background-color: rgb(29, 29, 29);
+    }
+    .header__nav-bar{
+        display: none;
+    }
+    .header__nav-bar.active{
+        display: flex;
+        position: fixed;
+        top: 1rem;
+        left: 0;
+        width: 100%;
+        transition: 1s;
+
+    }
+    .header__menu{
+        background-color: rgb(19, 19, 26);
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .header__items{
+        border-bottom: 1px solid white;
+        width: 100%;
+        padding: 0;
+    }
+    .header__items--selected{
+        border-radius: 5px;
+        box-shadow: 0 0 0 0;
+    }
+    .header__links{
+        display: block;
+        font-size: 1rem;
+        width: 100%;
+    
+    }
+    .header__items:hover{
+        background-color:rgb(8, 8, 89);
+        border-radius: 0;
+        transition: 0.3s;
+    }
+}

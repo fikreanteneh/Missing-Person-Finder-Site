@@ -1,0 +1,10 @@
+.post__image{
+    width: 100%;
+}
+.post__name{
+    font-size: 1.5rem;
+}
+.post__description{
+    font-size: 1rem;
+    text-align: justify;
+}
